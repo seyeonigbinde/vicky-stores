@@ -6,6 +6,7 @@ const Products = ({ id, product, handleSearch }) => {
       <img src={product.image} alt='product' />
       <h5> {product.title}</h5>
       <p> &#8358;{product.price}</p>
+      <button>Add To Cart</button>
     </div>
   )
 }

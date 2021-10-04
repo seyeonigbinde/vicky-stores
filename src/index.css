@@ -33,6 +33,10 @@ header {
   z-index: 1;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
+header a {
+  color: #f88905;
+  text-decoration: none;
+}
 nav {
   display: flex;
   justify-content: space-between;

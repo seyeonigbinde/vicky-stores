@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Products from './Products'
+import Header from './Header'
 
 const ShoppingList = () => {
   const [products, setProducts] = useState([])
@@ -28,14 +29,13 @@ const ShoppingList = () => {
   }
 
   return (
-    <section className='product_container'>
-      {filteredProduct.map((product) => (
-        <Products
-          key={product.id}
-          product={product}
-          handleSearch={handleSearch}
-        />
-      ))}
+    <section>
+      <Header handleSearch={handleSearch} />
+      <section className='product_container'>
+        {filteredProduct.map((product) => (
+          <Products key={product.id} product={product} />
+        ))}
+      </section>
     </section>
   )
 }

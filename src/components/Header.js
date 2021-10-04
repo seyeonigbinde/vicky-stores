@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = () => {
-  const [search, setSearch] = useState('')
-
-  const handleSearch = (e) => {
-    setSearch(e.target.value)
-  }
+const Header = ({ handleSearch }) => {
   return (
     <header>
       <div>
-        <h2>Vicky Stores </h2>
+        <Link to='/'>
+          <h2>Vicky Stores </h2>{' '}
+        </Link>
       </div>
       <div className='search_bar'>
         <input
