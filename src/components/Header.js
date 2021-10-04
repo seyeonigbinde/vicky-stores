@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [search, setSearch] = useState('')
@@ -19,7 +20,9 @@ const Header = () => {
         />
       </div>
       <nav>
-        <button>My Cart </button>
+        <Link to='/checkout'>
+          <button>My Cart </button>
+        </Link>
         <button>My Account </button>
       </nav>
     </header>

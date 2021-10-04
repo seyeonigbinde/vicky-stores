@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0 auto;
-  /* border: 1px solid skyblue; */
+  border: 1px solid skyblue;
 }
 h1 {
   font-size: 3.6rem;
@@ -127,4 +127,25 @@ button,
 input[type='button'],
 input {
   -webkit-appearance: none;
+}
+.checkout-section {
+  color: #fff;
+  padding: 32px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.success-message {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 24px;
+  background-color: #cf0;
+}
+
+form {
+  background: #0e101c;
+  max-width: 38%;
+  margin: 10% 28%;
 }
