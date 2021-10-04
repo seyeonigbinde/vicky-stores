@@ -11,7 +11,7 @@ body {
   /* border: 1px solid skyblue; */
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.6rem;
   color: #fff;
 }
 h2 {
@@ -60,21 +60,20 @@ nav {
   border-radius: 10px;
 }
 .product_container {
-  width: 20%;
-  margin: 2% 2%;
+  /* width: 20%; */
+  margin: 2% 0%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 }
 .product_items {
-  /* width: 23%; */
+  width: 20%;
   padding: 2%;
 }
-.product_group {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; */
+.product_items img {
+  width: 50%;
+  height: 20vh;
 }
 input {
   width: 95%;

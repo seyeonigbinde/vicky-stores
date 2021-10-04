@@ -28,7 +28,7 @@ const ShoppingList = () => {
   }
 
   return (
-    <section>
+    <section className='product_container'>
       {filteredProduct.map((product) => (
         <Products
           key={product.id}
