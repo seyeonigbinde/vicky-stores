@@ -7,22 +7,22 @@ const Header = () => {
     setSearch(e.target.value)
   }
   return (
-    <nav>
+    <header>
       <div>
-        <h1>Vicky Stores </h1>
+        <h2>Vicky Stores </h2>
       </div>
-      <div>
+      <div className='search_bar'>
         <input
           type='text'
           placeholder='Search the store'
           onChange={handleSearch}
         />
       </div>
-      <div>
+      <nav>
         <button>My Cart </button>
         <button>My Account </button>
-      </div>
-    </nav>
+      </nav>
+    </header>
   )
 }
 
