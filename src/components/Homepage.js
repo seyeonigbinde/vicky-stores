@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import images from '../images/shoe_1.jpeg'
 import ShoppingList from './ShoppingList'
+import Footer from './Footer'
 
 const Homepage = () => {
   return (
@@ -15,9 +16,8 @@ const Homepage = () => {
           <img src={images} alt='banner_image' />
         </figure>
       </section>
-      {/* <section className='product_group'> */}
       <ShoppingList />
-      {/* </section> */}
+      <Footer />
     </section>
   )
 }

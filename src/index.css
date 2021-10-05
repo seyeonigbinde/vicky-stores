@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0 auto;
-  border: 1px solid skyblue;
+  /* border: 1px solid skyblue; */
 }
 h1 {
   font-size: 3.6rem;
@@ -19,6 +19,7 @@ h2 {
 }
 hr {
   border: 1px solid #ddd;
+  width: 80%;
 }
 header {
   width: 100%;
@@ -100,7 +101,7 @@ button {
   border: none;
   margin-top: 10px;
   margin-right: 10px;
-  padding: 20px;
+  padding: 15px;
   font-size: 16px;
   font-weight: 100;
   cursor: pointer;
@@ -152,4 +153,49 @@ form {
   background: #0e101c;
   max-width: 38%;
   margin: 10% 28%;
+}
+footer {
+  background-color: #f88905;
+  color: #fff;
+  /* margin-top: 4%; */
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer_items {
+  width: 23%;
+  padding: 2% 2%;
+  margin-top: 2%;
+}
+.footer_items a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.footer_items a:hover {
+  color: #fff;
+}
+.footer_copyright {
+  text-align: center;
+  padding: 1% 0;
+}
+.footer_copyright a {
+  color: #fff;
+}
+.footer_copyright a:hover {
+  color: #ccc;
+}
+.footer_copyright p {
+  font-size: 0.8rem;
+}
+.footer_socials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 2% 0;
+  margin: 14% 14%;
 }
