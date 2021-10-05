@@ -3,7 +3,7 @@ import axios from 'axios'
 import Products from './Products'
 import Header from './Header'
 
-const ShoppingList = () => {
+const ShoppingList = ({ addToCart, cart }) => {
   const [products, setProducts] = useState([])
   const [searchProducts, setSearchProducts] = useState('')
 
@@ -30,10 +30,10 @@ const ShoppingList = () => {
 
   return (
     <section>
-      <Header handleSearch={handleSearch} />
+      <Header handleSearch={handleSearch} cart={cart} />
       <section className='product_container'>
         {filteredProduct.map((product) => (
-          <Products key={product.id} product={product} />
+          <Products key={product.id} product={product} addToCart={addToCart} />
         ))}
       </section>
     </section>

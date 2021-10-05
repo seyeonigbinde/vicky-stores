@@ -4,7 +4,7 @@ import images from '../images/shoe_1.jpeg'
 import ShoppingList from './ShoppingList'
 import Footer from './Footer'
 
-const Homepage = () => {
+const Homepage = ({ addToCart, cart }) => {
   return (
     <section>
       <Header />
@@ -16,7 +16,7 @@ const Homepage = () => {
           <img src={images} alt='banner_image' />
         </figure>
       </section>
-      <ShoppingList />
+      <ShoppingList addToCart={addToCart} cart={cart} />
       <Footer />
     </section>
   )

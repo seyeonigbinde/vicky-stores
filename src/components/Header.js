@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Header = ({ handleSearch }) => {
+const Header = ({ handleSearch, cart }) => {
   return (
     <header>
       <div>
@@ -17,8 +17,11 @@ const Header = ({ handleSearch }) => {
         />
       </div>
       <nav>
-        <Link to='/checkout'>
-          <button>My Cart </button>
+        <Link to='/cart'>
+          <button>
+            My Cart{' '}
+            {/* <span className='cart-badge'>{cart.length > 0 && cart.length}</span> */}
+          </button>
         </Link>
         <button>My Account </button>
       </nav>
