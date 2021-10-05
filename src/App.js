@@ -19,22 +19,24 @@ function App() {
   return (
     <div className='App'>
       <Header cart={cart} />
-      <Route
-        path='/cart'
-        render={(props) => (
-          <ShoppingCart
-            {...props}
-            cart={cart}
-            removeFromCart={removeFromCart}
-          />
-        )}
-      />
-      <Route path='/checkout'>
-        <CheckoutForm />
-      </Route>
-      <Route path='/'>
-        <Homepage cart={cart} addToCart={addToCart} />
-      </Route>
+      <Switch>
+        <Route
+          path='/cart'
+          render={(props) => (
+            <ShoppingCart
+              {...props}
+              cart={cart}
+              removeFromCart={removeFromCart}
+            />
+          )}
+        />
+        <Route path='/checkout'>
+          <CheckoutForm />
+        </Route>
+        <Route path='/'>
+          <Homepage cart={cart} addToCart={addToCart} />
+        </Route>
+      </Switch>
     </div>
   )
 }
