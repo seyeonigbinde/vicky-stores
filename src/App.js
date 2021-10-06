@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import './App.css'
-import Homepage from './components/Homepage'
-import { Switch, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import CheckoutForm from './components/CheckoutForm'
 import ShoppingCart from './components/ShoppingCart'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import ShoppingList from './components/ShoppingList'
 
 function App() {
   const [cart, setCart] = useState([])
 
-  const addToCart = (plant) => {
-    setCart([...cart, plant])
+  const addToCart = (product) => {
+    setCart([...cart, product])
   }
 
   const removeFromCart = (product) => {
@@ -34,9 +35,10 @@ function App() {
           <CheckoutForm />
         </Route>
         <Route path='/'>
-          <Homepage cart={cart} addToCart={addToCart} />
+          <ShoppingList cart={cart} addToCart={addToCart} />
         </Route>
       </Switch>
+      <Footer />
     </div>
   )
 }

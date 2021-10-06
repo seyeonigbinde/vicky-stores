@@ -12,7 +12,7 @@ const ShoppingCart = (props) => {
             alt={product.title}
           />
           <div className='product-details'>
-            <h2 className='product-name'>{product.title}</h2>
+            <h3 className='product-name'>{product.title}</h3>
             <p> &#8358;{product.price}</p>
             <button
               className='product-button'

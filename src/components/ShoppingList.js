@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import Products from './Products'
 import Header from './Header'
+import images from '../images/shoe_1.jpeg'
 
 const ShoppingList = ({ addToCart, cart }) => {
   const [products, setProducts] = useState([])
@@ -30,11 +30,27 @@ const ShoppingList = ({ addToCart, cart }) => {
 
   return (
     <section>
-      <Header handleSearch={handleSearch} cart={cart} />
-      <section className='product_container'>
-        {filteredProduct.map((product) => (
-          <Products key={product.id} product={product} addToCart={addToCart} />
-        ))}
+      <section className='banner'>
+        <div className='banner_text'>
+          <h1>Feel Your Swag! </h1>
+          <p>Number 1. online fashion store in Nigeria.</p>
+        </div>
+        <figure className='banner_img'>
+          <img src={images} alt='banner_image' />
+        </figure>
+      </section>
+      <section>
+        <Header handleSearch={handleSearch} cart={cart} />
+        <section className='product_container'>
+          {filteredProduct.map((product, id) => (
+            <div key={id} className='product_items'>
+              <img src={product.image} alt='product' />
+              <h5> {product.title}</h5>
+              <p> &#8358;{product.price}</p>
+              <button onClick={() => addToCart(product)}>Add To Cart</button>
+            </div>
+          ))}
+        </section>
       </section>
     </section>
   )

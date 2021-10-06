@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Header from './Header'
 
 const initialValue = {
   firstName: '',
@@ -21,7 +20,6 @@ const CheckoutForm = () => {
 
   return (
     <>
-      <Header />
       <form onSubmit={handleSubmit}>
         <h2>Checkout Form</h2>
         <label>
