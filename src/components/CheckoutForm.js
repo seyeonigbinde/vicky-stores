@@ -19,8 +19,8 @@ const CheckoutForm = () => {
   }
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
+    <section>
+      <form onSubmit={handleSubmit} className='checkout_container'>
         <h2>Checkout Form</h2>
         <label>
           First Name:
@@ -82,9 +82,9 @@ const CheckoutForm = () => {
       {showSuccessMessage && (
         <div className='success-message' data-testid='successMessage'>
           <p>
-            You have ordered some plants! Woo-hoo! <span role='img'>🎉</span>
+            You have ordered some items! Woo-hoo! <span role='img'>🎉</span>
           </p>
-          <p>Your new green friends will be shipped to:</p>
+          <p>Your orders will be shipped to:</p>
           <br />
           <br />
           <p>
@@ -96,7 +96,7 @@ const CheckoutForm = () => {
           </p>
         </div>
       )}
-    </>
+    </section>
   )
 }
 

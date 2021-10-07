@@ -133,6 +133,10 @@ nav {
 .checkout_title h5 {
   text-align: left;
 }
+.checkout_container {
+  width: 60%;
+}
+
 .product-card {
   display: flex;
   margin: 2%;
@@ -219,6 +223,30 @@ nav {
   background-color: #f88905;
 }
 input {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2%;
+  margin: 1%;
+  /* border-top: hidden;
+  border-right: hidden;
+  border-left: hidden; */
+  /* border-bottom: 1px solid #ccc; */
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0 2%;
+}
+
+.search_bar > input {
   width: 95%;
   padding: 1%;
   font-family: 'Raleway', sans-serif;
@@ -249,8 +277,9 @@ button:hover {
 
 form {
   background: #0e101c;
-  max-width: 38%;
-  margin: 10% 28%;
+  max-width: 75%;
+  margin: 10% 20%;
+  color: #fff;
 }
 footer {
   background-color: #f88905;
