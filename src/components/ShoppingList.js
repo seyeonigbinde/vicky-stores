@@ -45,8 +45,8 @@ const ShoppingList = ({ addToCart, cart }) => {
           {filteredProduct.map((product, id) => (
             <div key={id} className='product_items'>
               <img src={product.image} alt='product' />
-              <h5> {product.title}</h5>
-              <p> &#8358;{product.price}</p>
+              <p> {product.title}</p>
+              <h5> &#8358;{product.price}</h5>
               <button onClick={() => addToCart(product)}>Add To Cart</button>
             </div>
           ))}
