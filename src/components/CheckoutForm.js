@@ -10,7 +10,7 @@ const initialValue = {
   zip: '',
 }
 
-const CheckoutForm = () => {
+const CheckoutForm = ({ cart }) => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
   const [values, handleChanges] = useForm(initialValue)
 

@@ -32,7 +32,7 @@ function App() {
           )}
         />
         <Route path='/checkout'>
-          <CheckoutForm />
+          <CheckoutForm cart={cart} />
         </Route>
         <Route path='/'>
           <ShoppingList cart={cart} addToCart={addToCart} />
