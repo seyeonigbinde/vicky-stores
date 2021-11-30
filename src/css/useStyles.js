@@ -114,6 +114,42 @@ const useStyles = makeStyles(() => ({
   checkoutSubTitle2: {
     paddingRight: "35%",
   },
+  footer: {
+    backgroundColor: "#4ca1a3",
+    color: "#fff",
+  },
+  footerContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    flexWrap: "wrap",
+  },
+  footerItems: {
+    width: "23%",
+    padding: "2% 2%",
+    marginTop: "2%",
+  },
+  footerItemsLinks: {
+    display: "flex",
+    flexDirection: "column",
+    color: "#fff",
+    paddingTop: "2%",
+    paddingBottom: "4%",
+    textDecoration: "none",
+  },
+  footerSocials: {
+    display: "flex",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+    width: "60%",
+    padding: "2% 0",
+    margin: "14% 14%",
+    cursor: "pointer",
+  },
+  footerCopyright: {
+    textAlign: "center",
+    padding: "1% 0",
+  },
 }))
 
 export default useStyles
