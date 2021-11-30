@@ -23,9 +23,6 @@ const useStyles = makeStyles(() => ({
     width: "50%",
   },
   textfield: {
-    borderTop: "hidden",
-    borderRight: "hidden",
-    borderLeft: "hidden",
     width: "100%",
     padding: "1%",
     fontFamily: "Raleway, sans-serif",
@@ -40,6 +37,10 @@ const useStyles = makeStyles(() => ({
   },
   buttons: {
     textDecoration: "none",
+  },
+  buttons2: {
+    textDecoration: "none",
+    marginRight: "2rem",
   },
   banner: {
     marginTop: "6%",
@@ -64,8 +65,8 @@ const useStyles = makeStyles(() => ({
   },
   cartBadge: {
     position: "absolute",
-    top: "28px",
-    right: "12%",
+    top: "25px",
+    right: "0.1%",
     borderRadius: "50%",
     backgroundColor: "#000",
     color: "#fff",
@@ -135,13 +136,44 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     padding: "5% 2%",
     width: "100%",
-    textAlign: "left",
   },
   checkoutSubTitle: {
     paddingRight: "15%",
   },
   checkoutSubTitle2: {
     paddingRight: "35%",
+  },
+  checkoutButton: {
+    paddingRight: "20%",
+  },
+  form: {
+    boxShadow: "5px 5px 5px 5px #ddd",
+    padding: "3%",
+    maxWidth: "75%",
+    margin: "10% 20%",
+    color: "#fff",
+  },
+  field: {
+    display: "flex",
+    alignItems: "center",
+    paddingBottom: "3%",
+  },
+  label: {
+    width: "20%",
+    textTransform: "uppercase",
+    textAlign: "right",
+    marginRight: "5%",
+    fontWeight: 700,
+  },
+  textField: {
+    marginTop: "1rem",
+  },
+  successMessage: {
+    width: "400px",
+    margin: "0 auto",
+    marginTop: "32px",
+    padding: "24px",
+    backgroundColor: "#4ca1a3",
   },
   footer: {
     backgroundColor: "#4ca1a3",

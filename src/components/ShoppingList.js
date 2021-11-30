@@ -39,9 +39,7 @@ const ShoppingList = ({ addToCart, cart }) => {
           <Typography variant='h2' fontWeight='bold' color='#fff'>
             Feel Your Swag!
           </Typography>
-          <Typography color='#fff'>
-            Number 1. online fashion store in Nigeria.
-          </Typography>
+          <Typography color='#fff'>No. 1 online store in Nigeria.</Typography>
         </Box>
         <Box className={classes.bannerImgContainer}>
           <img src={images} alt='banner_image' className={classes.bannerImg} />

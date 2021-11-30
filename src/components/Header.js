@@ -17,6 +17,7 @@ const Header = ({ handleSearch, cart }) => {
       </Box>
       <Box className={classes.searchbar}>
         <TextField
+          fullWidth
           type='text'
           placeholder='Search by category'
           onChange={handleSearch}
@@ -24,7 +25,7 @@ const Header = ({ handleSearch, cart }) => {
         />
       </Box>
       <Box className={classes.navbar}>
-        <Link to='/cart' className={classes.buttons}>
+        <Link to='/cart' className={classes.buttons2}>
           <Button variant='contained' startIcon={<ShoppingCartRounded />}>
             My Cart
             <span className={classes.cartBadge}>

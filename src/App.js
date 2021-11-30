@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import './App.css'
-import { Route, Switch } from 'react-router-dom'
-import CheckoutForm from './components/CheckoutForm'
-import ShoppingCart from './components/ShoppingCart'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import ShoppingList from './components/ShoppingList'
+import React, { useState } from "react"
+import "./App.css"
+import { Route, Switch } from "react-router-dom"
+import CheckoutForm from "./components/CheckoutForm"
+import ShoppingCart from "./components/ShoppingCart"
+import Footer from "./components/Footer"
+import ShoppingList from "./components/ShoppingList"
+import Header from "./components/Header"
 
 function App() {
   const [cart, setCart] = useState([])
@@ -32,7 +32,7 @@ function App() {
           )}
         />
         <Route path='/checkout'>
-          <CheckoutForm cart={cart} />
+          <CheckoutForm />
         </Route>
         <Route path='/'>
           <ShoppingList cart={cart} addToCart={addToCart} />

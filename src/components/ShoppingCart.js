@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { Button, Box, Typography } from "@mui/material"
+import ShoppingCartCheckoutOutlined from "@mui/icons-material/ShoppingCartCheckoutOutlined"
 import useStyles from "../css/useStyles"
 
 const ShoppingCart = (props) => {
@@ -64,14 +65,16 @@ const ShoppingCart = (props) => {
             </Typography>
             <Typography variant='h6'> &#8358;{total}</Typography>
           </Box>
-          <hr />
-          <Button
-            variant='contained'
-            className={classes.checkout}
-            onClick={() => props.history.push("/checkout")}
-          >
-            Continue to checkout
-          </Button>
+          <Box className={classes.checkoutTitle}>
+            <Button
+              variant='contained'
+              className={classes.checkoutButton}
+              onClick={() => props.history.push("/checkout")}
+              startIcon={<ShoppingCartCheckoutOutlined />}
+            >
+              Continue to checkout
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>
