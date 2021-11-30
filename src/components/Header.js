@@ -10,23 +10,22 @@ const Header = ({ handleSearch, cart }) => {
     <Box className={classes.header}>
       <Box>
         <Link to='/' className={classes.headerLinks}>
-          <Typography variant='h3'>Vicky Stores </Typography>
+          <Typography variant='h3' fontWeight='bold'>
+            Vicky Stores
+          </Typography>
         </Link>
       </Box>
       <Box className={classes.searchbar}>
-        <input
+        <TextField
           type='text'
           placeholder='Search by category'
           onChange={handleSearch}
+          className={classes.textfield}
         />
       </Box>
       <Box className={classes.navbar}>
-        <Link to='/cart'>
-          <Button
-            variant='contained'
-            startIcon={<ShoppingCartRounded />}
-            className={classes.buttons}
-          >
+        <Link to='/cart' className={classes.buttons}>
+          <Button variant='contained' startIcon={<ShoppingCartRounded />}>
             My Cart
             <span className={classes.cartBadge}>
               {cart.length > 0 && cart.length}

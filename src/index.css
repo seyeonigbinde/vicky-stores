@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0 auto;
-  /* border: 1px solid skyblue; */
+  border: 1px solid skyblue;
 }
 h1 {
   font-size: 3.6rem;
@@ -160,15 +160,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.product_title {
-  width: 60%;
-}
-.product_price {
-  width: 20%;
-}
-.product_action {
-  width: 20%;
-}
+
 .product-bottom-row {
   display: flex;
   margin-top: 16px;
@@ -223,7 +215,7 @@ nav {
   background-color: #f88905;
 }
 input {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   width: 100%;
   padding: 2%;
@@ -249,7 +241,7 @@ label {
 .search_bar > input {
   width: 95%;
   padding: 1%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   border-top: hidden;
   border-right: hidden;
