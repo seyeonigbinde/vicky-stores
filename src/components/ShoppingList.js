@@ -2,11 +2,14 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Header from "./Header"
 import images from "../images/shoe_1.jpeg"
-import Button from "@mui/material/Button"
+import { Button, Typography, Box } from "@mui/material"
+import useStyles from "../css/useStyles"
 
 const ShoppingList = ({ addToCart, cart }) => {
   const [products, setProducts] = useState([])
   const [searchProducts, setSearchProducts] = useState("")
+
+  const classes = useStyles()
 
   useEffect(() => {
     axios
@@ -34,7 +37,7 @@ const ShoppingList = ({ addToCart, cart }) => {
       <section className='banner'>
         <div className='banner_text'>
           <h1>Feel Your Swag! </h1>
-          <p>Number 1. online fashion store in Nigeria.</p>
+          <Typography>Number 1. online fashion store in Nigeria.</Typography>
         </div>
         <figure className='banner_img'>
           <img src={images} alt='banner_image' />
@@ -42,16 +45,18 @@ const ShoppingList = ({ addToCart, cart }) => {
       </section>
       <section>
         <Header handleSearch={handleSearch} cart={cart} />
-        <section className='product_container'>
+        <Box className={classes.productContainer}>
           {filteredProduct.map((product, id) => (
             <div key={id} className='product_items'>
               <img src={product.image} alt='product' />
-              <p> {product.title}</p>
+              <Typography> {product.title}</Typography>
               <h5> &#8358;{product.price}</h5>
-              <Button onClick={() => addToCart(product)}>Add To Cart</Button>
+              <Button variant='contained' onClick={() => addToCart(product)}>
+                Add To Cart
+              </Button>
             </div>
           ))}
-        </section>
+        </Box>
       </section>
     </section>
   )

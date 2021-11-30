@@ -1,12 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react"
+import { Link } from "react-router-dom"
+import Button from "@mui/material/Button"
+import ShoppingCartRounded from "@mui/icons-material/ShoppingCartRounded"
 
 const Header = ({ handleSearch, cart }) => {
   return (
     <header>
       <div>
         <Link to='/'>
-          <h2>Vicky Stores </h2>{' '}
+          <h2>Vicky Stores </h2>{" "}
         </Link>
       </div>
       <div className='search_bar'>
@@ -18,12 +20,12 @@ const Header = ({ handleSearch, cart }) => {
       </div>
       <nav>
         <Link to='/cart'>
-          <button>
-            My Cart{' '}
+          <Button variant='contained' startIcon={<ShoppingCartRounded />}>
+            My Cart
             <span className='cart-badge'>{cart.length > 0 && cart.length}</span>
-          </button>
+          </Button>
         </Link>
-        <button>My Account </button>
+        <Button variant='contained'>My Account </Button>
       </nav>
     </header>
   )
