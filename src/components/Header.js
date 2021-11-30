@@ -1,33 +1,41 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Button from "@mui/material/Button"
+import { Button, Box, Typography, TextField } from "@mui/material"
 import ShoppingCartRounded from "@mui/icons-material/ShoppingCartRounded"
+import useStyles from "../css/useStyles"
 
 const Header = ({ handleSearch, cart }) => {
+  const classes = useStyles()
   return (
-    <header>
-      <div>
-        <Link to='/'>
-          <h2>Vicky Stores </h2>{" "}
+    <Box className={classes.header}>
+      <Box>
+        <Link to='/' className={classes.headerLinks}>
+          <Typography variant='h3'>Vicky Stores </Typography>
         </Link>
-      </div>
-      <div className='search_bar'>
+      </Box>
+      <Box className={classes.searchbar}>
         <input
           type='text'
-          placeholder='Search the store'
+          placeholder='Search by category'
           onChange={handleSearch}
         />
-      </div>
-      <nav>
+      </Box>
+      <Box className={classes.navbar}>
         <Link to='/cart'>
-          <Button variant='contained' startIcon={<ShoppingCartRounded />}>
+          <Button
+            variant='contained'
+            startIcon={<ShoppingCartRounded />}
+            className={classes.buttons}
+          >
             My Cart
-            <span className='cart-badge'>{cart.length > 0 && cart.length}</span>
+            <span className={classes.cartBadge}>
+              {cart.length > 0 && cart.length}
+            </span>
           </Button>
         </Link>
         <Button variant='contained'>My Account </Button>
-      </nav>
-    </header>
+      </Box>
+    </Box>
   )
 }
 

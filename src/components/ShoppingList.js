@@ -33,7 +33,7 @@ const ShoppingList = ({ addToCart, cart }) => {
   }
 
   return (
-    <section>
+    <Box>
       <section className='banner'>
         <div className='banner_text'>
           <h1>Feel Your Swag! </h1>
@@ -58,7 +58,7 @@ const ShoppingList = ({ addToCart, cart }) => {
           ))}
         </Box>
       </section>
-    </section>
+    </Box>
   )
 }
 
