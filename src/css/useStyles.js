@@ -41,6 +41,27 @@ const useStyles = makeStyles(() => ({
   buttons: {
     textDecoration: "none",
   },
+  banner: {
+    marginTop: "6%",
+    backgroundColor: "#4ca1a3",
+    width: "100%",
+    padding: "4% 4% 0%",
+    display: "flex",
+    justifyContent: "space-between",
+    color: "#4f4f4f",
+    alignItems: "center",
+  },
+  bannerImgContainer: {
+    width: "60%",
+  },
+  bannerImg: {
+    width: "70%",
+    borderRadius: "10px",
+  },
+  bannerText: {
+    textAlign: "left",
+    lineHeight: "1.5",
+  },
   cartBadge: {
     position: "absolute",
     top: "28px",
@@ -93,6 +114,14 @@ const useStyles = makeStyles(() => ({
   },
   productAction: {
     width: "20%",
+  },
+  productItems: {
+    width: "20%",
+    padding: "2%",
+  },
+  productItemsImg: {
+    width: "50%",
+    height: "20vh",
   },
   checkoutSection: {
     color: "#000",

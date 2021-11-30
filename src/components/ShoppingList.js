@@ -34,30 +34,38 @@ const ShoppingList = ({ addToCart, cart }) => {
 
   return (
     <Box>
-      <section className='banner'>
-        <div className='banner_text'>
-          <h1>Feel Your Swag! </h1>
-          <Typography>Number 1. online fashion store in Nigeria.</Typography>
-        </div>
-        <figure className='banner_img'>
-          <img src={images} alt='banner_image' />
-        </figure>
-      </section>
-      <section>
+      <Box className={classes.banner}>
+        <Box className={classes.bannerText}>
+          <Typography variant='h2' fontWeight='bold' color='#fff'>
+            Feel Your Swag!
+          </Typography>
+          <Typography color='#fff'>
+            Number 1. online fashion store in Nigeria.
+          </Typography>
+        </Box>
+        <Box className={classes.bannerImgContainer}>
+          <img src={images} alt='banner_image' className={classes.bannerImg} />
+        </Box>
+      </Box>
+      <Box>
         <Header handleSearch={handleSearch} cart={cart} />
         <Box className={classes.productContainer}>
           {filteredProduct.map((product, id) => (
-            <div key={id} className='product_items'>
-              <img src={product.image} alt='product' />
-              <Typography> {product.title}</Typography>
-              <h5> &#8358;{product.price}</h5>
+            <Box key={id} className={classes.productItems}>
+              <img
+                src={product.image}
+                alt='product'
+                className={classes.productItemsImg}
+              />
+              <Typography variant='subtitle2'> {product.title}</Typography>
+              <Typography variant='h6'>&#8358;{product.price}</Typography>
               <Button variant='contained' onClick={() => addToCart(product)}>
                 Add To Cart
               </Button>
-            </div>
+            </Box>
           ))}
         </Box>
-      </section>
+      </Box>
     </Box>
   )
 }
