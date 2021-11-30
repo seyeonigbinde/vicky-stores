@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import Header from './Header'
-import images from '../images/shoe_1.jpeg'
+import React, { useEffect, useState } from "react"
+import axios from "axios"
+import Header from "./Header"
+import images from "../images/shoe_1.jpeg"
+import Button from "@mui/material/Button"
 
 const ShoppingList = ({ addToCart, cart }) => {
   const [products, setProducts] = useState([])
-  const [searchProducts, setSearchProducts] = useState('')
+  const [searchProducts, setSearchProducts] = useState("")
 
   useEffect(() => {
     axios
-      .get('https://fakestoreapi.com/products/')
+      .get("https://fakestoreapi.com/products/")
       .then((res) => {
         setProducts(res.data)
       })
@@ -47,7 +48,7 @@ const ShoppingList = ({ addToCart, cart }) => {
               <img src={product.image} alt='product' />
               <p> {product.title}</p>
               <h5> &#8358;{product.price}</h5>
-              <button onClick={() => addToCart(product)}>Add To Cart</button>
+              <Button onClick={() => addToCart(product)}>Add To Cart</Button>
             </div>
           ))}
         </section>
