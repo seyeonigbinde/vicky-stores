@@ -54,7 +54,7 @@ const Footer = () => {
       <Box className={classes.footerCopyright}>
         <Typography variant='subtitle2'>
           Copyright &copy; 2021 || Designed by
-          <a href='https://seyeonigbinde.vercel.app/'>Stevens Design Tech.</a>
+          <a href='https://seyeonigbinde.vercel.app/'> Stevens Design Tech.</a>
         </Typography>
       </Box>
     </Box>

@@ -54,10 +54,17 @@ const useStyles = makeStyles(() => ({
   },
   bannerImgContainer: {
     width: "60%",
+    paddingBottom: "0",
   },
   bannerImg: {
     width: "70%",
-    borderRadius: "10px",
+    height: "70vh",
+  },
+  bannerImg2: {
+    width: "30%",
+    position: "absolute",
+    right: "0%",
+    top: "11.8%",
   },
   bannerText: {
     textAlign: "left",

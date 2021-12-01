@@ -14,6 +14,9 @@ hr {
   border: 1px solid #ddd;
   width: 80%;
 }
+a {
+  color: #fff;
+}
 button {
   background: #4ca1a3;
   color: white;
@@ -27,5 +30,6 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #4ca1a3;
+  background: #fff;
+  color: #4ca1a3;
 }

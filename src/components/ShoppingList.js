@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import Header from "./Header"
-import images from "../images/shoe_1.jpeg"
+import fashion2 from "../images/fashion2.jpeg"
+import fashion from "../images/fashion.jpeg"
 import { Button, Typography, Box } from "@mui/material"
 import useStyles from "../css/useStyles"
 
@@ -42,8 +43,13 @@ const ShoppingList = ({ addToCart, cart }) => {
           <Typography color='#fff'>No. 1 online store in Nigeria.</Typography>
         </Box>
         <Box className={classes.bannerImgContainer}>
-          <img src={images} alt='banner_image' className={classes.bannerImg} />
+          <img
+            src={fashion2}
+            alt='banner_image'
+            className={classes.bannerImg}
+          />
         </Box>
+        <img src={fashion} alt='banner_image2' className={classes.bannerImg2} />
       </Box>
       <Box>
         <Header handleSearch={handleSearch} cart={cart} />
