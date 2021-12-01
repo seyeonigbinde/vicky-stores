@@ -23,12 +23,12 @@ Vicky Stores is a demo online store created using React, Material-UI and [fakest
 
 1. Homepage. Users will be able to add items to cart.
 
-![Homepage](images/vicky_stores.png)
+![Homepage](src/images/vicky_stores.png)
 
 2. Cart. Users will be able to view their items in the cart. They choose to remove any of the items, continue shopping or proceed to checkout.
 
-![Cart](images/cart.png)
+![Cart](src/images/cart.png)
 
 3. Checkout. Users can fill the checkout form and checkout their items in the cart
 
-![Dashboard](images/checkout.png)
+![Dashboard](src/images/checkout.png)
